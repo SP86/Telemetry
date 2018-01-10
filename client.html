@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title></title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+    <link href="./fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- Bootstrap core CSS-->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template-->
+    <link href="./css/style.min.css" rel="stylesheet">
+    <link href="./css/bootstrap-datepicker.min.css" rel="stylesheet">
+    <link href="https://cdn3.devexpress.com/jslib/17.1.7/css/dx.common.css" rel="stylesheet">
+</head>
+
+<body class="fixed-nav bg-dark" id="page-top">
+<!-- Navigation-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-light fixed-top p-0" id="mainNav">
+    <a class="navbar-brand" href="index.html">Telemetry.</a>
+    <button class="navbar-toggler navbar-toggler-right mr-3" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
+            <li class="nav-item" data-toggle="tooltip" data-placement="right">
+                <a class="nav-link" href="index.html">
+                    <i class="dashboard menu_icon"></i>
+                    <span class="nav-link-text">Домашня</span>
+                </a>
+            </li>
+            <li class="nav-item active" data-toggle="tooltip" data-placement="right">
+                <a class="nav-link" href="#!">
+                    <i class="clients menu_icon"></i>
+                    <span class="nav-link-text">Клієнти</span>
+                </a>
+            </li>
+            <li class="nav-item" data-toggle="tooltip" data-placement="right">
+                <a class="nav-link" href="#!">
+                    <i class="models menu_icon"></i>
+                    <span class="nav-link-text">Моделі</span>
+                </a>
+            </li>
+            <li class="nav-item" data-toggle="tooltip" data-placement="right">
+                <a class="nav-link" href="#!">
+                    <i class="zvitu menu_icon"></i>
+                    <span class="nav-link-text">Звіти</span>
+                </a>
+            </li>
+            <li class="nav-item" data-toggle="tooltip" data-placement="right">
+                <a class="nav-link" href="#!">
+                    <i class="users menu_icon"></i>
+                    <span class="nav-link-text">Користувачі</span>
+                </a>
+            </li>
+            <li class="nav-item" data-toggle="tooltip" data-placement="right">
+                <a class="nav-link" href="#!">
+                    <i class="role menu_icon"></i>
+                    <span class="nav-link-text">Управління ролями</span>
+                </a>
+            </li>
+            <li class="nav-item" data-toggle="tooltip" data-placement="right">
+                <a class="nav-link" href="#!">
+                    <i class="shop menu_icon"></i>
+                    <span class="nav-link-text">Торгові точки</span>
+                </a>
+            </li>
+            <li class="nav-item" data-toggle="tooltip" data-placement="right">
+                <a class="nav-link" href="#!">
+                    <i class="notification menu_icon"></i>
+                    <span class="nav-link-text">Сповіщення</span>
+                </a>
+            </li>
+        </ul>
+        <ul class="navbar-nav sidenav-toggler">
+            <li class="nav-item">
+                <a class="nav-link text-center" id="sidenavToggler">
+                    <i class="fa fa-fw fa-angle-left"></i>
+                </a>
+            </li>
+        </ul>
+
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-auto mr-auto">
+                    <nav aria-label="breadcrumb" role="navigation">
+                        <ol class="breadcrumb header_breadcrumb mb-0">
+                            <li class="breadcrumb-item d-flex align-items-center"><img src="images/menu_icons/menu_clients.png" class="mr-4"> <a href="#">Клієнти</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">ФОП "Іванов В.А"</li>
+                        </ol>
+                    </nav>
+                </div>
+                <div class="col-lg-auto user_name">Максим Коваль</div>
+            </div>
+        </div>
+    </div>
+</nav>
+<main class="content-wrapper">
+    <div class="container mb-5">
+        <div class="row align-items-center">
+            <div class="col-12 page_title mb-2"><h1>ФОП "Іванов В.А"</h1></div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-8 d-flex mb-3 mb-md-0">
+                <div class="card w-100">
+                    <div class="card-body d-flex justify-content-star align-items-center">
+                        <div class="w-100">
+                            <div class="form-group row">
+                                <label class="col-xl-4">Внутрішня назва:</label>
+                                <div class="col-xl-8 lucidagrande">Василь Іванов</div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-xl-4">Адреса:</label>
+                                <div class="col-xl-8 lucidagrande">м.Київ, вул. Театральна 4</div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-xl-4">Телефон:</label>
+                                <div class="col-xl-8 lucidagrande">+380545656589</div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-xl-4">E-mail:</label>
+                                <div class="col-xl-8 lucidagrande">ivanov@gmail.com</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 gradient_block_wrap">
+                <div class="card w-100">
+                    <div class="card-body gradient_block d-flex">
+                        <div class="mr-auto d-flex align-items-end">орендованого</div>
+                        <div class="digit">5</div>
+                    </div>
+                </div>
+                <div class="card w-100">
+                    <div class="card-body gradient_block d-flex">
+                        <div class="mr-auto d-flex align-items-end">скорінг</div>
+                        <div class="digit">8,2</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col-12 col-md-6 col-lg-8 d-flex">
+                <div class="card w-100">
+                    <div class="card-body d-flex justify-content-star align-items-center">
+                        <div class="w-100">
+                            <div class="form-group row">
+                                <label class="col-xl-4">Контактні особи:</label>
+                                <div class="col-xl-8 contact_persons">
+                                    <div class="font-weight-medium">Валентина Юрієвна</div>
+                                    <div class="d-flex justify-content-between flex-wrap align-items-center flex-lg-wrap">
+                                        <div>Директор</div>
+                                        <div>+380975654589</div>
+                                        <div>test@test.com</div>
+                                    </div>
+                                    <hr/>
+                                    <div>Баронов Юрій</div>
+                                    <div class="d-flex justify-content-between flex-wrap align-items-center flex-lg-wrap">
+                                        <div>Директор</div>
+                                        <div>+380975654589</div>
+                                        <div>test@test.com</div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 d-flex  mt-sm-3 mt-md-0">
+                <div class="card w-100 ">
+                    <div class="card-body">
+                        <div>
+                            <label>Зареєстрований:</label>
+                            <div class="date_format_full">27 жовтня 2016</div>
+                        </div>
+                        <div>
+                            <label class="mt-4">Срок закінчення договору:</label>
+                            <div class="date_format_full">27 жовтня 2018</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.container-->
+
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row align-items-start">
+                <div class="col-12 col-md-12 col-lg-8 d-flex flex-wrap justify-content-start align-items-center select_type">
+                    <div class="pr-0 pb-md-0 pr-md-5 mb-2 mb-xl-0 d-block d-md-inline-block ">
+                        <div class="my_appearance">
+                        <select class="custom-select border-0 font-weight-semibold">
+                            <option selected>Використання кави</option>
+                            <option value="1">Приготування</option>
+                            <option value="2">Вимикання</option>
+                            <option value="3">Переміщення</option>
+                        </select>
+                        </div>
+                    </div>
+                    <div class="btn-group tabs_buttons" role="group">
+                        <button type="button" class="btn btn-primary font-weight-semibold active">Сьогодні</button>
+                        <button type="button" class="btn btn-primary font-weight-semibold">Місяць</button>
+                        <button type="button" class="btn btn-primary font-weight-semibold">Квартал</button>
+                        <button type="button" class="btn btn-primary font-weight-semibold">Всього</button>
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-4 mt-3 mt-lg-auto">
+                    <div class="pb-2">Вибрати період</div>
+                    <form class="check_period_form">
+                        <div class="row">
+                            <div class="col-12 col-md col-lg-12 mb-sm-3 mb-3 mb-xl-0 col-xl">
+                                <label class="analitic_period_label mb-0 calendar"><input type="text"  class="form-control input_date" id="period_from"  placeholder="з"></label>
+                            </div>
+                            <div class="col-12 col-md col-lg-12 col-xl mb-3 mb-xl-0 col-xl">
+                                <label class="analitic_period_label mb-0 calendar"><input type="text" class="form-control input_date" id="period_to" value="" placeholder="по"></label>
+                            </div>
+                        </div>
+                        <div class="form-group mt-xl-3 my_appearance">
+                            <select class="form-control">
+                                <option selected>Торгова точка</option>
+                                <option>...</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-12">
+                    <div class="demo-container">
+                        <div id="chart"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 mt-5">
+                    <div class="table-responsive">
+                        <table class="table table-bordered">
+                            <thead>
+                            <tr>
+                                <th class="font-weight-semibold" scope="col"></th>
+                                <th class="font-weight-semibold" scope="col">Назва машинки</th>
+                                <th class="font-weight-semibold" scope="col">Торгова точка</th>
+                                <th class="font-weight-semibold" scope="col">Тип</th>
+                                <th class="font-weight-semibold" scope="col">Договір</th>
+                                <th class="font-weight-semibold" scope="col">Статус</th>
+                                <th class="font-weight-semibold" scope="col">Адреса</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td class="text-center">
+                                    <label class="custom-control custom-checkbox">
+                                        <input type="checkbox" class="custom-control-input" checked="checked">
+                                        <span class="custom-control-indicator"></span>
+                                    </label>
+                                </td>
+                                <td><a href="#!" class="font-weight-medium">Супер кофе машина</a> </td>
+                                <td><a href="#!" class="font-weight-medium">Назва торгової точки</a> </td>
+                                <td>Професійна</td>
+                                <td>Оренда</td>
+                                <td><span class="active font-weight-semibold">Активна</span></td>
+                                <td>вул. Театральна 45, м. Київ, Україна</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5">
+            <div class="row align-items-start mb-5">
+                <div class="col-12 col-md-12 col-lg-8 d-flex flex-wrap justify-content-start align-items-center select_type">
+                    <div class="pr-0 pb-md-0 pr-md-5 mb-2 mb-xl-0 d-block d-md-inline-block">
+                        <div class="before_tabs_buttons_text lucidagrandebold">Історія відвантажень</div>
+                    </div>
+                    <div class="btn-group tabs_buttons" role="group">
+                        <button type="button" class="btn btn-primary active font-weight-semibold">Тиждень</button>
+                        <button type="button" class="btn btn-primary font-weight-semibold">Місяць</button>
+                        <button type="button" class="btn btn-primary font-weight-semibold">Квартал</button>
+                        <button type="button" class="btn btn-primary font-weight-semibold">Всього</button>
+                    </div>
+                    <div class="card w-100 mt-4 mb-3 mb-lg-auto">
+                        <div class="card-body px-3 py-2">
+                            <div class="row">
+                                <div class="col"><span class="font-weight-bold second_label">всього: </span><span class="font-weight-light second_label_value">7263&nbsp;кг</span></div>
+                                <div class="col"><span class="coffee_type type_1"></span><span class="font-weight-bold second_label">тип кави 1: </span><span class="font-weight-light second_label_value">3263&nbsp;кг</span></div>
+                                <div class="col"><span class="coffee_type type_2"></span><span class="font-weight-bold second_label">тип кави 2: </span><span class="font-weight-light second_label_value">4000&nbsp;кг</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-4">
+                    <div class="pb-2">Вибрати період</div>
+                    <form class="check_period_form d-flex flex-column justify-content-between">
+                        <div class="row">
+                            <div class="col-12 col-md col-lg-12 mb-sm-3 mb-3 mb-xl-0 col-xl">
+                                <label class="analitic_period_label mb-0 calendar"><input type="text"  class="form-control input_date" value="" placeholder="з"></label>
+                            </div>
+                            <div class="col-12 col-md col-lg-12 col-xl mb-3 mb-xl-0 col-xl">
+                                <label class="analitic_period_label mb-0 calendar"> <input type="text" class="form-control input_date" value="" placeholder="по"></label>
+                            </div>
+                        </div>
+                        <div class="form-group mt-xl-3 mb-0 my_appearance">
+                            <select class="form-control">
+                                <option selected>Торгова точка</option>
+                                <option>...</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-12">
+                    <div class="demo-container">
+                        <div id="chart2"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-12">
+                    <div class="table-responsive">
+                        <table class="table table-bordered">
+                            <thead>
+                            <tr>
+                                <th scope="col">ID</th>
+                                <th scope="col">Торгова точка</th>
+                                <th scope="col">Замовлення</th>
+                                <th scope="col">Тип операції</th>
+                                <th scope="col">Ціна</th>
+                                <th scope="col">Сума</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td><span class="font-weight-semibold my_gray-700">id62523</span> <div class="mt-2">5 жовтня 2017</div></td>
+                                <td><a href="#!" class="font-weight-medium">Назва торгової точки</a> </td>
+                                <td>
+                                    <div><div class="table_color_block d-inline-block align-middle mr-2" style="background-color: #5570E7;"></div> тип кави 1 <span class="float-right">56&nbsp;кг</span></div>
+                                    <div class="mt-3"><div class="table_color_block d-inline-block align-middle mr-2" style="background-color: #C8B5F0;"></div> тип кави 2 <span class="float-right">10 кг</span></div>
+                                </td>
+                                <td class="lucidaGrande font-weight-bold"><img src="images/arrow_green.png" class="mr-3"/>Відвантажено</td>
+                                <td>500 грн</td>
+                                <td>2800 грн</td>
+                            </tr>
+                            <tr>
+                                <td><span class="font-weight-semibold my_gray-700">id62523</span> <div class="mt-2">5 жовтня 2017</div></td>
+                                <td><a href="#!" class="font-weight-medium">Назва торгової точки</a> </td>
+                                <td>
+                                    <div><div class="table_color_block d-inline-block align-middle mr-2" style="background-color: #5570E7;"></div> тип кави 1 <span class="float-right">56&nbsp;кг</span></div>
+                                    <div class="mt-3"><div class="table_color_block d-inline-block align-middle mr-2" style="background-color: #C8B5F0;"></div> тип кави 2 <span class="float-right">10 кг</span></div>
+                                </td>
+                                <td class="lucidaGrande font-weight-bold"><img src="images/arrow_red.png" class="mr-3"/>Повернуто</td>
+                                <td>500 грн</td>
+                                <td>2800 грн</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fa fa-angle-up"></i>
+    </a>
+</main>
+    <script src="./js/jquery.min.js"></script>
+    <!-- Bootstrap core JavaScript-->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/bootstrap-datepicker.min.js"></script>
+    <script src="./locales/bootstrap-datetimepicker.ua.js" charset="UTF-8"></script>
+    <script src="https://cdn3.devexpress.com/jslib/17.1.7/js/dx.all.js" charset="UTF-8"></script>
+    <!-- Custom scripts for all pages-->
+    <script src="./js/scripts.min.js"></script>
+    <script src="./js/jquery.easing.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.input_date').datepicker({
+                format: "yyyy-mm-dd",
+                autoclose: true,
+                language: 'ua',
+                orientation: "bottom auto" ,
+                todayHighlight: true,
+                endDate: "<?=date('Y-m-d')?>",
+            });
+
+            $(function(){
+                var dataSource = [{
+                    time: "0:00",
+                    americano: 6.7,
+                    espresso: 28.6,
+                }, {
+                    time: "1:00",
+                    americano: 9.6,
+                    espresso: 43.4,
+                }, {
+                    time: "2:00",
+                    americano: 13.5,
+                    espresso: 49,
+                }, {
+                    time: "3:00",
+                    americano: 30,
+                    espresso: 90.3,
+                },{
+                    time: "4:00",
+                    americano: 25,
+                    espresso: 70.3,
+                },{
+                    time: "5:00",
+                    americano: 20,
+                    espresso: 40.3,
+                },{
+                    time: "6:00",
+                    americano: 40,
+                    espresso: 60.3,
+                },{
+                    time: "8:00",
+                    americano: 58,
+                    espresso: 68.3,
+                },{
+                    time: "9:00",
+                    americano: 6.7,
+                    espresso: 28.6,
+                }, {
+                    time: "10:00",
+                    americano: 9.6,
+                    espresso: 43.4,
+                }, {
+                    time: "11:00",
+                    americano: 13.5,
+                    espresso: 49,
+                }, {
+                    time: "12:00",
+                    americano: 30,
+                    espresso: 90.3,
+                },{
+                    time: "13:00",
+                    americano: 25,
+                    espresso: 70.3,
+                },{
+                    time: "14:00",
+                    americano: 20,
+                    espresso: 40.3,
+                },{
+                    time: "15:00",
+                    americano: 40,
+                    espresso: 60.3,
+                },{
+                    time: "16:00",
+                    americano: 58,
+                    espresso: 68.3,
+                }];
+
+                var dataSourceChart2 = [{
+                    day: "1",
+                    type1: 0,
+                    type2: 0,
+                }, {
+                    day: "2",
+                    type1: 0,
+                    type2: 0,
+                }, {
+                    day: "3",
+                    type1: 6.7,
+                    type2: 18.6,
+                }, {
+                    day: "4",
+                    type1: 3.7,
+                    type2: 12.6,
+                },{
+                    day: "5",
+                    type1: 0,
+                    type2: 0,
+                },{
+                    day: "6",
+                    type1: 8,
+                    type2: 30,
+                },{
+                    day: "7",
+                    type1: 40,
+                    type2: 40,
+                },{
+                    day: "8",
+                    type1: 25,
+                    type2: 13,
+                },{
+                    day: "9",
+                    type1: 16,
+                    type2: 3,
+                }, {
+                    day: "10",
+                    type1: 15,
+                    type2: 0,
+                }, {
+                    day: "11",
+                    type1: 12,
+                    type2: 0,
+                }, {
+                    day: "12",
+                    type1: 35,
+                    type2: 24,
+                },{
+                    day: "13",
+                    type1: 0,
+                    type2: 35,
+                },{
+                    day: "14",
+                    type1: 0,
+                    type2: 0,
+                },{
+                    day: "15",
+                    type1: 0,
+                    type2: 0,
+                },{
+                    day: "16",
+                    type1: 25,
+                    type2: 12,
+                },{
+                    day: "17",
+                    type1: 0,
+                    type2: 0,
+                }];
+
+                $("#chart").dxChart({
+                    dataSource: dataSource,
+                    commonSeriesSettings: {
+                        argumentField: "time",
+                        type: "stackedBar"
+                    },
+                    series: [
+                        {
+                            valueField: "americano",
+                            name: "Амерікано",
+                            color: '#5570E7' },
+                        {
+                            valueField: "espresso",
+                            name: "Еспрессо",
+                            color: '#C8B5F0'
+                        },
+                    ],
+                    legend: {
+                        visible: false
+                    },
+                    valueAxis: {
+                        allowDecimals:false
+                    },
+                    title: false,
+                    tooltip: {
+                        enabled: true,
+                        location: "edge",
+                        customizeTooltip: function (arg) {
+                            return {
+                                text: arg.seriesName + " : " + arg.valueText +"%"
+                            };
+                        }
+                    }
+                });
+
+                $("#chart2").dxChart({
+                    dataSource: dataSourceChart2,
+                    commonSeriesSettings: {
+                        argumentField: "day",
+                        type: "stackedBar"
+                    },
+                    series: [
+                        {
+                            valueField: "type1",
+                            name: "Тип1",
+                            color: '#5570E7' },
+                        {
+                            valueField: "type2",
+                            name: "Тип2",
+                            color: '#C8B5F0'
+                        },
+                    ],
+                    legend: {
+                        visible: false
+                    },
+                    valueAxis: {
+                        allowDecimals:false
+                    },
+                    title: false,
+                    tooltip: {
+                        enabled: true,
+                        location: "edge",
+                        customizeTooltip: function (arg) {
+                            return {
+                                text: arg.seriesName + " : " + arg.valueText +"%"
+                            };
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+/CoffeeBootstrap.zip
+/pug/
+/Telemetry_clients.zip
+/.idea
+/.jsbeautifyrc
+/.travis.yml
+/gulpfile.js
+/LICENSE
+/register.html
+/package.json
+/vendor/
+/js/bootstrap.min.js
+/js/bootstrap.min.js.map
+/js/scripts.js
+/scss/
