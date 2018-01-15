@@ -10,12 +10,13 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
     <link href="./fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <!-- Bootstrap core CSS-->
-    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom styles for this template-->
-    <link href="./css/style.min.css" rel="stylesheet">
+    <link href="./scss/style.min.css" rel="stylesheet">
 </head>
 
-<body class="fixed-nav bg-dark" id="page-top">
+<body>
+<div id="page-top" class="main-wrapper fixed-nav bg-dark">
 <!-- Navigation-->
 <nav class="navbar navbar-expand-lg navbar-dark bg-light fixed-top p-0" id="mainNav">
     <a class="navbar-brand" href="index.html">Telemetry.</a>
@@ -86,7 +87,8 @@
                 <div class="col-lg-auto mr-auto">
                     <nav aria-label="breadcrumb" role="navigation">
                         <ol class="breadcrumb header_breadcrumb mb-0">
-                            <li class="breadcrumb-item d-flex align-items-center"><img src="images/menu_icons/menu_models.png" class="mr-4"> Моделі</li>
+                            <li class="breadcrumb-item d-flex align-items-center"><a href="#"><img src="images/menu_icons/menu_models.png" class="mr-4"> <a href="#">Моделі</a></li>
+                            <li class="breadcrumb-item">NB707</a></li>
                         </ol>
                     </nav>
                 </div>
@@ -97,21 +99,136 @@
 </nav>
 <main class="content-wrapper">
     <div class="container mb-5">
-        <form class="" action="#">
-
-        </form>
+        <div class="row">
+            <div class="col-12 col-sm-7">
+                <div class="row justify-content-between">
+                    <div class="col col-sm-4 mb-3 mb-sm-0">
+                        <label>Модель:</label>
+                        <div>NB707</div>
+                    </div>
+                    <div class="col col-sm-4 mb-3 mb-sm-0">
+                        <label>Виробник:</label>
+                        <div>BOSH</div>
+                    </div>
+                    <div class="col col-sm-4 mb-3 mb-sm-0">
+                        <label>Тип:</label>
+                        <div>Автоматична</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-5 d-sm-flex justify-content-sm-end align-content-sm-center">
+                <div><button type="submit" class="btn btn-secondary mt-4 mt-sm-0" form="save_model_form"><img src="./images/download.png"/> Зберегти</button></div>
+                </div>
+        </div>
     </div>
     <!-- /.container-->
+    <div class="container-fluid">
+        <form id="save_model_form">
+        <div class="container">
+            <div class="table-responsive">
+                <table class="table table-bordered table_layout_fixed">
+                    <thead>
+                    <tr>
+                        <th scope="col" class="lucidagrandebold">Порція</th>
+                        <th scope="col" class="lucidagrandebold">Кавомолка</th>
+                        <th scope="col" class="lucidagrandebold">Лічильник1</th>
+                        <th scope="col" class="lucidagrandebold">Лічильник2</th>
+                        <th scope="col" class="lucidagrandebold">Дії</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>
+                            <div class="my_appearance">
+                                <select class="form-control border-0 border-top-0 border-right-0 border-left-0 bg-transparent" disabled>
+                                    <option selected>Обрати порцію</option>
+                                    <option>...</option>
+                                </select>
+                            </div>
+                        </td>
+                        <td><input class="form-control border-0 border-top-0 border-right-0 border-left-0" type="text" value="464" disabled/></td>
+                        <td><input class="form-control border-0 border-top-0 border-right-0 border-left-0" type="text" value="868" disabled/></td>
+                        <td><input class="form-control border-0 border-top-0 border-right-0 border-left-0" type="text" value="990" disabled/></td>
+                        <td>
+                            <div class="d-flex justify-content-around align-items-center">
+                                <span class="fa-stack fa-lg mr-2 fields_edit">
+                                  <i class="fa fa-circle-thin fa-stack-2x"></i>
+                                  <i class="fa fa-pencil fa-stack-1x"></i>
+                                </span>
+                                <span class="fa-stack fa-lg mr-2">
+                                  <i class="fa fa-circle-thin fa-stack-2x"></i>
+                                  <i class="fa fa-download fa-stack-1x"></i>
+                                </span>
+                                <span class="fa-stack fa-lg row_remove">
+                                  <i class="fa fa-circle-thin fa-stack-2x"></i>
+                                  <i class="fa fa-times fa-stack-1x"></i>
+                                </span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="my_appearance">
+                                <select class="form-control border-0 border-top-0 border-right-0 border-left-0 bg-transparent" disabled>
+                                    <option selected>Обрати порцію</option>
+                                    <option>...</option>
+                                </select>
+                            </div>
+                        </td>
+                        <td><input class="form-control border-0 border-top-0 border-right-0 border-left-0" type="text" value="464" disabled/></td>
+                        <td><input class="form-control border-0 border-top-0 border-right-0 border-left-0" type="text" value="868" disabled/></td>
+                        <td><input class="form-control border-0 border-top-0 border-right-0 border-left-0" type="text" value="990" disabled/></td>
+                        <td>
+                            <div class="d-flex justify-content-around align-items-center">
+                                <span class="fa-stack fa-lg mr-2 fields_edit">
+                                  <i class="fa fa-circle-thin fa-stack-2x"></i>
+                                  <i class="fa fa-pencil fa-stack-1x"></i>
+                                </span>
+                                <span class="fa-stack fa-lg mr-2">
+                                  <i class="fa fa-circle-thin fa-stack-2x"></i>
+                                  <i class="fa fa-download fa-stack-1x"></i>
+                                </span>
+                                <span class="fa-stack fa-lg row_remove">
+                                  <i class="fa fa-circle-thin fa-stack-2x"></i>
+                                  <i class="fa fa-times fa-stack-1x"></i>
+                                </span>
+                            </div>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        </form>
+    </div>
 </main>
 <!-- Scroll to Top Button-->
 <a class="scroll-to-top rounded" href="#page-top">
     <i class="fa fa-angle-up"></i>
 </a>
+</div>
 <script src="./js/jquery.min.js"></script>
 <!-- Bootstrap core JavaScript-->
 <script src="./js/bootstrap.bundle.min.js"></script>
 <!-- Custom scripts for all pages-->
 <script src="./js/scripts.min.js"></script>
 <script src="./js/jquery.easing.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $(".fields_edit").on('click', function () {
+            var $row = $(this).closest("tr"),
+                $tds = $row.find("td");
+            $.each($tds, function() {
+                $(this).find(".form-control").removeAttr('disabled').removeClass('border-0');
+            });
+        });
+
+        $(".row_remove").on('click', function () {
+            var $row = $(this).closest("tr");
+                $row.remove();
+        });
+    });
+</script>
+
 </body>
 </html>
