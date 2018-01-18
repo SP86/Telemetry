@@ -13,12 +13,13 @@
   <!-- Bootstrap core CSS-->
   <link href="./css/bootstrap.min.css" rel="stylesheet">
   <!-- Custom styles for this template-->
-  <link href="./css/style.min.css" rel="stylesheet">
+  <link href="./scss/style.min.css" rel="stylesheet">
   <link href="./css/bootstrap-datepicker.min.css" rel="stylesheet">
   <link href="https://cdn3.devexpress.com/jslib/17.1.7/css/dx.common.css" rel="stylesheet">
 </head>
 
-<body class="fixed-nav bg-dark" id="page-top">
+<body>
+<div id="page-top" class="main-wrapper fixed-nav bg-dark">
   <!-- Navigation-->
   <nav class="navbar navbar-expand-lg navbar-dark bg-light fixed-top p-0" id="mainNav">
     <a class="navbar-brand" href="index.html">Telemetry.</a>
@@ -110,9 +111,10 @@
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-7">
-            <div class="row align-items-center">
-              <div class="col-auto mr-auto coffee_count_portion mb-1 lucidagrandebold">Порцій:&nbsp;&nbsp;<strong>5876</strong></div>
-              <div class="col-auto mb-1"><button class="btn btn-success col-auto coffee_off lucidagrandebold">Увімкнути</button></div>
+            <div class="row justify-content-between align-items-center">
+              <div class="col-auto coffee_count_portion mb-1 lucidagrandebold font-size-large">Порцій:&nbsp;&nbsp;<strong>5876</strong></div>
+              <div class="col-auto lucidagrandebold font-size-large text_underline"> <a href="#!" >Параметри</a></div>
+              <div class="col-auto mb-1"><button class="btn btn-success col-auto coffee_off lucidagrandebold font-size-large">Увімкнути</button></div>
             </div>
           </div>
         </div>
@@ -319,6 +321,7 @@
       <i class="fa fa-angle-up"></i>
     </a>
   </main>
+</div>
   <script src="./js/jquery.min.js"></script>
   <!-- Bootstrap core JavaScript-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
