@@ -95,7 +95,12 @@
                         </ol>
                     </nav>
                 </div>
-                <div class="col-lg-auto user_name">Максим Коваль</div>
+                <div class="col-lg-auto user_name ">
+                    <a class="dropdown-toggle" id="dropdownLogout" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Максим Коваль</a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a class="dropdown-item" href="#">Вихід</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -198,11 +203,11 @@
                 <div class="col-12 col-md-12 col-lg-8 d-flex flex-wrap justify-content-start align-items-center select_type">
                     <div class="pr-0 pb-md-0 pr-md-5 mb-2 mb-xl-0 d-block d-md-inline-block ">
                         <div class="my_appearance">
-                        <select class="custom-select border-0 font-weight-semibold">
-                            <option selected>Використання кави</option>
-                            <option value="1">Приготування</option>
-                            <option value="2">Вимикання</option>
-                            <option value="3">Переміщення</option>
+                        <select class="custom-select form-control border-0 font-weight-semibold">
+                            <option value="1" selected>Використання кави</option>
+                            <option value="2">Скоринг по телеметрії</option>
+                            <option value="3">Вимикання</option>
+                            <option value="4">Переміщення</option>
                         </select>
                         </div>
                     </div>
@@ -257,8 +262,8 @@
                             </thead>
                             <tbody>
                             <tr>
-                                <td class="text-center">
-                                    <label class="custom-control custom-checkbox">
+                                <td class="text-center custom_checkbox_wrapper">
+                                    <label class="custom-control custom-checkbox ">
                                         <input type="checkbox" class="custom-control-input" checked="checked">
                                         <span class="custom-control-indicator"></span>
                                     </label>
