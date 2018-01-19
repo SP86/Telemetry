@@ -12,7 +12,7 @@
     <!-- Bootstrap core CSS-->
     <link href="./vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom styles for this template-->
-    <link href="./scss/style.min.css" rel="stylesheet">
+    <link href="./css/style.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -91,7 +91,12 @@
                             </ol>
                         </nav>
                     </div>
-                    <div class="col-lg-auto user_name">Максим Коваль</div>
+                    <div class="col-lg-auto user_name dropdown">
+                        <a class="dropdown-toggle" id="dropdownLogout" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Максим Коваль</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownLogout">
+                            <a class="dropdown-item" href="#">Вихід</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
