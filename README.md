@@ -18,3 +18,5 @@ http://telemetry.itpromotion.com.ua/role_management_list.html<br/>
 http://telemetry.itpromotion.com.ua/dashboard.html<br/>
 http://telemetry.itpromotion.com.ua/trade_points.html<br/>
 http://telemetry.itpromotion.com.ua/notifications.html<br/>
+http://telemetry.itpromotion.com.ua/telemetry_parameters.html<br/>
+http://telemetry.itpromotion.com.ua/telemetry_interpretation_parameters.html<br/>
