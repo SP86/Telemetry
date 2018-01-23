@@ -14,8 +14,6 @@
     <link href="./css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom styles for this template-->
     <link href="./scss/style.min.css" rel="stylesheet">
-    <link href="./css/bootstrap-datepicker.min.css" rel="stylesheet">
-    <link href="https://cdn3.devexpress.com/jslib/17.1.7/css/dx.common.css" rel="stylesheet">
 </head>
 
 <body>
@@ -85,7 +83,7 @@
                 </li>
             </ul>
 
-            <div class="container">
+            <div class="container breadcrumb_wrapper">
                 <div class="row align-items-center">
                     <div class="col-lg-auto mr-auto">
                         <nav aria-label="breadcrumb" role="navigation">
@@ -129,9 +127,14 @@
                         <label class="col-4 col-md-6">Інвентарний номер:</label>
                         <div class="col-8 col-md-6 font-weight-bold">142536987452</div>
                     </div>
-                    <div class="form-group row">
+                    <div class="form-group coffee_imei row">
                         <label class="col-4 col-md-6">IMEI:</label>
-                        <div class="col-8 col-md-6 font-weight-bold">5684712</div>
+                        <div class="col-8 col-md-6 font-weight-bold">
+                            <div class="input-group">
+                                <input type="text" class="form-control-b-border font-weight-bold color_646364" value="5684712">
+                                <span class="input-group-addon"><i class="fa fa-pencil" aria-hidden="true"></i></span>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-12 col-md-4 d-flex justify-content-end">
@@ -250,7 +253,6 @@
 <!-- Custom scripts for all pages-->
 <script src="./js/scripts.min.js"></script>
 <script src="./js/jquery.easing.min.js"></script>
-
 </body>
 
 </html>
