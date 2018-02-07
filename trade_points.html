@@ -101,7 +101,7 @@
             </div>
         </div>
     </nav>
-    <main class="content-wrapper">
+    <main class="content-wrapper d-flex flex-column justify-content-between">
         <div class="container mb-4">
             <div class="form-group row">
                 <div class="col-12 col-lg-5 col-xl-6 mb-2 mb-lg-0">
@@ -124,8 +124,13 @@
             </div>
         </div>
         <!-- /.container-->
+        <div class="trade-points-map-wrapper d-flex" id="map">
+            <div class="map-modal">
+
+            </div>
+        </div>
         <div class="container-fluid">
-            <form id="save_model_form">
+            <i class="fa fa-times close_trade_points_table"></i>
                 <div class="container">
                     <div class="table-responsive">
                         <table class="table table-bordered table_layout_fixed">
@@ -146,7 +151,6 @@
                         </table>
                     </div>
                 </div>
-            </form>
         </div>
     </main>
     <!-- Scroll to Top Button-->
@@ -161,6 +165,13 @@
 <!-- Custom scripts for all pages-->
 <script src="./js/scripts.min.js"></script>
 <script src="./js/jquery.easing.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $(".close_trade_points_table").on('click', function () {
+            $(this).closest(".container-fluid").hide();
+        });
+    });
+</script>
 
 </body>
 </html>
