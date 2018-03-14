@@ -13,7 +13,7 @@
   <!-- Bootstrap core CSS-->
   <link href="./css/bootstrap.min.css" rel="stylesheet">
   <!-- Custom styles for this template-->
-  <link href="./scss/style.min.css" rel="stylesheet">
+  <link href="./css/style.min.css" rel="stylesheet">
   <link href="./css/bootstrap-datepicker.min.css" rel="stylesheet">
   <link href="https://cdn3.devexpress.com/jslib/17.1.7/css/dx.common.css" rel="stylesheet">
 </head>
@@ -111,15 +111,13 @@
         <div class="row align-items-center">
           <div class="col-12 col-md-6 col-lg-5">
             <div class="row">
-              <div class="col-auto mr-auto page_title mb-1 font-weight-bold">Супер машинка</div>
-              <div class="col-auto coffee_id mb-1 font-weight-semibold">id625223</div>
+              <div class="col-auto mr-auto page_title mb-1 font-weight-bold">Супер машинка id625223</div>
+              <div class="col-auto mb-1 font-size-21"><a href="#!" class="color_646364"><i class="fa fa-cogs" aria-hidden="true"></i></a></div>
             </div>
           </div>
           <div class="col-12 col-md-6 col-lg-7">
-            <div class="row justify-content-between align-items-center">
-              <div class="col-auto coffee_count_portion mb-1 lucidagrandebold font-size-large">Порцій:&nbsp;&nbsp;<strong>5876</strong></div>
-              <div class="col-auto lucidagrandebold font-size-large text_underline"> <a href="#!" >Параметри</a></div>
-              <div class="col-auto mb-1"><button class="btn btn-success col-auto coffee_off lucidagrandebold font-size-large">Увімкнути</button></div>
+            <div class="row justify-content-end align-items-center">
+              <div class="col-auto mb-1"><button class="btn btn-success col-auto coffee_on lucidagrandebold font-size-large">Увімкнути</button></div>
             </div>
           </div>
         </div>
@@ -127,17 +125,9 @@
           <div class="col-12 col-md-6 col-xl-5 d-flex order-1 order-md-1">
             <div class="card w-100">
               <div class="card-body">
-                <a href="#!" class="font-weight-bold"><u>ФОП "Іванов В.А."</u></a>
+                <a href="#!" class="font-weight-bold font-size-21 d-block mb-3"><u>ФОП "Іванов В.А."</u></a>
+                <a href="#!" class="font-weight-bold font-size-15 d-block mb-4"><u>Крушельницької 5</u></a>
                 <form>
-                  <legend class="col-form-legend font-weight-semibold">Контакти торгової точки</legend>
-                  <div class="form-group row">
-                    <label class="col-12 col-md-5 col-lg-12 col-xl-4">Адреса:</label>
-                    <div class="col-12 col-md-7 col-lg-12 col-xl-8 lucidagrande">м.Київ, вул. Театральна 4</div>
-                  </div>
-                  <div class="form-group row">
-                    <label class="col-12 col-md-5 col-lg-12 col-xl-4">Телефон:</label>
-                    <div class="col-12 col-md-7 col-lg-12 col-xl-8 lucidagrande">+380446828290</div>
-                  </div>
                   <div class="form-group row">
                     <label class="col-12 col-md-5 col-lg-12 col-xl-4">Тип кавоварки:</label>
                     <div class="col-12 col-md-7 col-lg-12 col-xl-8 lucidagrande">Автоматична</div>
@@ -151,13 +141,12 @@
                     <div class="col-12 col-md-7 col-lg-12 col-xl-8 lucidagrande">Активна</div>
                   </div>
                   <div class="form-group row coffee_imei">
-                    <label class="col-12 col-md-5 col-lg-12 col-xl-4">IMEI*:</label>
-                    <div class="col-12 col-md-7 col-lg-12 col-xl-8">
-                      <div class="input-group">
-                        <input type="text" class="form-control-b-border lucidagrande" id="coffee_imei">
-                        <span class="input-group-addon"><i class="fa fa-pencil" aria-hidden="true"></i></span>
-                      </div>
-                    </div>
+                    <label class="col-12 col-md-5 col-lg-12 col-xl-4">IMEI:</label>
+                    <div class="col-12 col-md-7 col-lg-12 col-xl-8 lucidagrande">3556987412356</div>
+                  </div>
+                  <div class="form-group row coffee_imei">
+                    <label class="col-12 col-md-5 col-lg-12 col-xl-4">Стан рахунку:</label>
+                    <div class="col-12 col-md-7 col-lg-12 col-xl-8 lucidagrande">315 грн.</div>
                   </div>
                 </form>
               </div>
@@ -183,24 +172,41 @@
     <!-- /.container-->
     <div class="container-fluid">
       <div class="container">
-        <div class="row align-items-end">
-          <div class="col-md-auto mr-auto d-flex flex-wrap justify-content-between align-items-center">
-            <div class="pr-0 pb-3 pb-md-0 pr-md-5 d-block d-md-inline-block font-weight-semibold font-size-large">Використання кави</div>
+        <div class="row align-items-start">
+          <div class="col-12 col-md-12 col-lg-8 d-flex flex-wrap justify-content-start align-items-center select_type">
+            <div class="pr-0 pb-md-0 pr-md-5 mb-2 mb-xl-0 d-block d-md-inline-block ">
+              <div class="my_appearance">
+                <select class="custom-select form-control border-0 font-weight-semibold">
+                  <option value="1" selected>Використання кави</option>
+                  <option value="2" >Скоринг по телеметрії</option>
+                  <option value="3">Вимикання</option>
+                  <option value="4">Переміщення</option>
+                </select>
+              </div>
+            </div>
             <div class="btn-group tabs_buttons" role="group">
-              <button type="button" class="btn btn-primary active">Сьогодні</button>
-              <button type="button" class="btn btn-primary">Місяць</button>
-              <button type="button" class="btn btn-primary">Квартал</button>
-              <button type="button" class="btn btn-primary">Всього</button>
+              <button type="button" class="btn btn-primary font-weight-semibold active">Тиждень</button>
+              <button type="button" class="btn btn-primary font-weight-semibold">Місяць</button>
+              <button type="button" class="btn btn-primary font-weight-semibold">Квартал</button>
+              <button type="button" class="btn btn-primary font-weight-semibold">Всього</button>
             </div>
           </div>
-          <div class="col-md-auto mt-3 mt-md-0">
+          <div class="col-12 col-md-12 col-lg-4 mt-3 mt-lg-auto">
             <div class="pb-2">Вибрати період</div>
-            <form class="form-inline check_period_form">
-              <div class="form-group mr-2">
-                <label class="analitic_period_label mb-0 calendar"><input type="text"  class="form-control" id="period_from" value="" placeholder="з"></label>
+            <form class="check_period_form">
+              <div class="row">
+                <div class="col-12 col-md col-lg-12 mb-sm-3 mb-3 mb-xl-0 col-xl">
+                  <label class="analitic_period_label mb-0 calendar"><input type="text"  class="form-control input_date" id="period_from"  placeholder="з"></label>
+                </div>
+                <div class="col-12 col-md col-lg-12 col-xl mb-3 mb-xl-0 col-xl">
+                  <label class="analitic_period_label mb-0 calendar"><input type="text" class="form-control input_date" id="period_to" value="" placeholder="по"></label>
+                </div>
               </div>
-              <div class="form-group ">
-                <label class="analitic_period_label mb-0 calendar"><input type="text" class="form-control" id="period_to" placeholder="по"></label>
+              <div class="form-group mt-xl-3 my_appearance">
+                <select class="form-control">
+                  <option selected>Торгова точка</option>
+                  <option>...</option>
+                </select>
               </div>
             </form>
           </div>
@@ -271,9 +277,9 @@
     </div>
       <div class="container mt-5">
         <div class="row align-items-end">
-          <div class="col-md-auto mr-md-auto mt-3 mt-md-0">
+          <div class="col-md-auto mr-md-auto mt-3 mt-md-0 mb-3 mb-lg-0">
             <div class="my_appearance">
-            <select class="custom-select">
+            <select class="form-control w-230-sm-up">
               <option selected>По типу дії</option>
               <option value="1">Приготування</option>
               <option value="2">Вимикання</option>

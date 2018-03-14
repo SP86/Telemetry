@@ -13,7 +13,7 @@
     <!-- Bootstrap core CSS-->
     <link href="./css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom styles for this template-->
-    <link href="./scss/style.min.css" rel="stylesheet">
+    <link href="./css/style.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -106,138 +106,194 @@
         </div>
     </nav>
     <main class="content-wrapper">
+
         <div class="container mb-5">
-            <div class="row justify-content-between">
-                <div class="col-12 col-md-4">
-                    <div class="form-group row">
-                        <label class="col-4">Модель:</label>
-                        <div class="col-8 font-weight-bold"><a href="#!">NB707</a></div>
-                    </div>
-                    <div class="form-group row">
-                        <label class="col-4">Виробник:</label>
-                        <div class="col-8 font-weight-bold">BOSH</div>
-                    </div>
-                    <div class="form-group row">
-                        <label class="col-4">Тип:</label>
-                        <div class="col-8 font-weight-bold">Автоматична</div>
-                    </div>
+            <div class="row">
+                <div class="col offset-md-6 offset-xl-5 font-size-15 d-none d-md-block">
+                    Планове розміщення кавоварки
                 </div>
-                <div class="col-12 col-md-4">
-                    <div class="form-group row">
-                        <label class="col-4 col-md-6">Інвентарний номер:</label>
-                        <div class="col-8 col-md-6 font-weight-bold">142536987452</div>
-                    </div>
-                    <div class="form-group coffee_imei row">
-                        <label class="col-4 col-md-6">IMEI:</label>
-                        <div class="col-8 col-md-6 font-weight-bold">
-                            <div class="input-group">
-                                <input type="text" class="form-control-b-border font-weight-bold color_646364" value="5684712">
-                                <span class="input-group-addon"><i class="fa fa-pencil" aria-hidden="true"></i></span>
-                            </div>
+            </div>
+            <div class="row mt-2">
+                <div class="col-12 col-md-6 col-xl-5 d-flex flex-column order-1 order-md-1">
+                    <div class="card w-100">
+                        <div class="card-body">
+                            <form>
+                                <div class="form-group row">
+                                    <label class="col-12 col-md-5 col-lg-12 col-xl-5">Модель:</label>
+                                    <div class="col-12 col-md-7 col-lg-12 col-xl-7 font-weight-bold"><a href="#!">NB707</a></div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-12 col-md-5 col-lg-12 col-xl-5">Виробник:</label>
+                                    <div class="col-12 col-md-7 col-lg-12 col-xl-7 font-weight-bold">BOSH</div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-12 col-md-5 col-lg-12 col-xl-5">Тип:</label>
+                                    <div class="col-12 col-md-7 col-lg-12 col-xl-7 font-weight-bold">Автоматична</div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-12 col-md-5 col-lg-12 col-xl-5">Інвентарний номер:</label>
+                                    <div class="col-12 col-md-7 col-lg-12 col-xl-7 font-weight-bold">142536987452</div>
+                                </div>
+                                <div class="form-group row coffee_imei">
+                                    <label class="col-12 col-md-5 col-lg-12 col-xl-5">IMEI:</label>
+                                    <div class="col-12 col-md-7 col-lg-12 col-xl-7">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control-b-border font-weight-bold color_646364 w-75" value="565656584712">
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
                     </div>
+                    <div>
+                        <button type="submit" class="btn btn-secondary mt-4 mb-4 mb-md-0"><img src="./images/download.png" class="mr-3"/> Зберегти зміни</button>
+                    </div>
                 </div>
-                <div class="col-12 col-md-4 d-flex justify-content-end">
-                    <div><button type="submit" class="btn btn-secondary mt-4 mt-sm-0"><img src="./images/download.png" class="mr-3"/> Зберегти зміни</button></div>
+                <div class="col-12 col-md-6 col-xl-7 map_wrapper order-3 order-md-2 d-flex flex-column ">
+                    <div class="font-size-15 mb-3 d-md-none">Планове розміщення кавоварки</div>
+                    <div id="map" class="h-100"></div>
                 </div>
             </div>
         </div>
+
+
         <!-- /.container-->
         <div class="container-fluid">
             <div class="container">
-                <div class="font-weight-semibold font-size-large">Актуальні значення параметрів</div>
+                <div class="font-weight-semibold font-size-large mb-5"><h3>Актуальні значення на даний момент</h3></div>
+                <div class="font-weight-semibold font-size-large">Параметри кавомашини</div>
                 <div class="table-responsive mt-3 mb-5">
-                    <table class="table table-bordered table_layout_fixed mt-3">
+                    <table class="table table-bordered border-bottom-1 table_layout_fixed mt-3">
                         <thead>
                         <tr>
                             <th>Параметр</th>
-                            <th>Напій</th>
                             <th>Значення</th>
                         </tr>
                         </thead>
                         <tbody>
                         <tr>
                             <td>Базовий лічильник порцій</td>
-                            <td></td>
                             <td>2365</td>
                         </tr>
                         </tbody>
                     </table>
                 </div>
-                <div class="font-weight-semibold font-size-large">Історія змін значень параметрів</div>
-                <div class="table-responsive mt-3">
-                    <table class="table table-bordered table_layout_fixed">
-                        <thead>
+                <div class="font-weight-semibold font-size-large">Діапазони параметрів для визначення напоїв</div>
+                <div class="table-responsive mt-3 mb-5 ">
+                    <table class="table table-bordered border-bottom-1  mt-3">
                         <tr>
-                            <th class="lucidagrandebold">Порція</th>
-                            <th class="lucidagrandebold">Кавомолка</th>
-                            <th class="lucidagrandebold">Лічильник1</th>
-                            <th class="lucidagrandebold">Лічильник2</th>
-                            <th class="lucidagrandebold">Дії</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td>
-                                <div class="my_appearance">
-                                    <select class="form-control border-0 border-top-0 border-right-0 border-left-0 bg-transparent w-200" disabled>
-                                        <option selected>Обрати порцію</option>
-                                        <option>...</option>
-                                    </select>
-                                </div>
-                            </td>
-                            <td><input class="form-control border-0 border-top-0 border-right-0 border-left-0" type="text" value="464" disabled/></td>
-                            <td><input class="form-control border-0 border-top-0 border-right-0 border-left-0" type="text" value="868" disabled/></td>
-                            <td><input class="form-control border-0 border-top-0 border-right-0 border-left-0" type="text" value="990" disabled/></td>
-                            <td>
-                                <div class="d-flex justify-content-around align-items-center model-buttons-group">
-                                <span class="fa-stack fa-lg mr-2 fields_edit">
-                                  <i class="fa fa-circle-thin fa-stack-2x"></i>
-                                  <i class="fa fa-pencil fa-stack-1x"></i>
-                                </span>
-                                    <span class="fa-stack fa-lg mr-2">
-                                  <i class="fa fa-circle-thin fa-stack-2x"></i>
-                                  <i class="fa fa-download fa-stack-1x"></i>
-                                </span>
-                                    <span class="fa-stack fa-lg row_remove">
-                                  <i class="fa fa-circle-thin fa-stack-2x"></i>
-                                  <i class="fa fa-times fa-stack-1x"></i>
-                                </span>
-                                </div>
-                            </td>
+                            <th class="lucidagrandebold border-top-0" rowspan="2">Напій</th>
+                            <th class="lucidagrandebold border-top-0" colspan="2">Кавомолка</th>
+                            <th class="lucidagrandebold border-top-0" colspan="2">Флоуметр</th>
+                            <th class="lucidagrandebold border-top-0" colspan="2">Імпульси під час кавомолки</th>
                         </tr>
                         <tr>
-                            <td>
-                                <div class="my_appearance">
-                                    <select class="form-control border-0 border-top-0 border-right-0 border-left-0 bg-transparent w-200" disabled>
-                                        <option selected>Обрати порцію</option>
-                                        <option>...</option>
-                                    </select>
-                                </div>
-                            </td>
-                            <td><input class="form-control border-0 border-top-0 border-right-0 border-left-0" type="text" value="464" disabled/></td>
-                            <td><input class="form-control border-0 border-top-0 border-right-0 border-left-0" type="text" value="868" disabled/></td>
-                            <td><input class="form-control border-0 border-top-0 border-right-0 border-left-0" type="text" value="990" disabled/></td>
-                            <td>
-                                <div class="d-flex justify-content-around align-items-center model-buttons-group">
-                                <span class="fa-stack fa-lg mr-2 fields_edit">
-                                  <i class="fa fa-circle-thin fa-stack-2x"></i>
-                                  <i class="fa fa-pencil fa-stack-1x"></i>
-                                </span>
-                                    <span class="fa-stack fa-lg mr-2">
-                                  <i class="fa fa-circle-thin fa-stack-2x"></i>
-                                  <i class="fa fa-download fa-stack-1x"></i>
-                                </span>
-                                    <span class="fa-stack fa-lg row_remove">
-                                  <i class="fa fa-circle-thin fa-stack-2x"></i>
-                                  <i class="fa fa-times fa-stack-1x"></i>
-                                </span>
-                                </div>
-                            </td>
+                            <td class="font-weight-bold py-1">min</td>
+                            <td class="font-weight-bold py-1">max</td>
+                            <td class="font-weight-bold py-1">min</td>
+                            <td class="font-weight-bold py-1">max</td>
+                            <td class="font-weight-bold py-1">min</td>
+                            <td class="font-weight-bold py-1">max</td>
                         </tr>
-                        </tbody>
+                        <tr>
+                            <td>Лате малий</td>
+                            <td>Еспресо</td>
+                            <td>6</td>
+                            <td>250</td>
+                            <td>300</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
                     </table>
                 </div>
+            </div>
+        </div>
+
+        <div class="container my-5">
+            <div class="font-weight-semibold font-size-large mb-5"><h3>Задати значення</h3></div>
+            <div class="font-weight-semibold font-size-large mt-3 mb-5">Параметри кавомашин</div>
+            <div class="table-responsive mb-5">
+                <table class="table table-bordered border-bottom-1">
+                    <thead>
+                    <tr>
+                        <th class="lucidagrandebold">Параметр</th>
+                        <th class="lucidagrandebold">Значення</th>
+                        <th class="lucidagrandebold">Актуально з</th>
+                        <th class="lucidagrandebold">Дії</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Коефіцієнт кавомолки</td>
+                        <td><input class="form-control border-0 border-top-0 border-right-0 border-left-0" type="text" value="1.1" disabled/></td>
+                        <td><input class="form-control border-0 border-top-0 border-right-0 border-left-0" type="text" value="22.05.16" disabled/></td>
+                        <td>
+                            <div class="d-flex align-items-center model-buttons-group">
+                                <span class="fa-stack fa-lg mr-2 fields_edit">
+                                  <i class="fa fa-circle-thin fa-stack-2x"></i>
+                                  <i class="fa fa-pencil fa-stack-1x"></i>
+                                </span>
+                                <span class="fa-stack fa-lg mr-2">
+                                  <i class="fa fa-circle-thin fa-stack-2x"></i>
+                                  <i class="fa fa-download fa-stack-1x"></i>
+                                </span>
+                                <span class="fa-stack fa-lg row_remove">
+                                  <i class="fa fa-circle-thin fa-stack-2x"></i>
+                                  <i class="fa fa-times fa-stack-1x"></i>
+                                </span>
+                            </div>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="font-weight-semibold font-size-large mt-3 mb-5">Діапазон значення для вивчення напоїв</div>
+            <div class="table-responsive mb-5 custom-overflow">
+                <table class="table table-bordered border-bottom-1">
+                    <tr>
+                        <th class="lucidagrandebold border-top-0" rowspan="2">Напій</th>
+                        <th class="lucidagrandebold border-top-0" colspan="2">Кавомолка</th>
+                        <th class="lucidagrandebold border-top-0" colspan="2">Флоуметр</th>
+                        <th class="lucidagrandebold border-top-0" colspan="2">Імпульси під час кавомолки</th>
+                        <th class="lucidagrandebold border-top-0" rowspan="2">Актуально з</th>
+                        <th class="lucidagrandebold border-top-0" rowspan="2">Дії</th>
+                    </tr>
+                    <tr>
+                        <td class="font-weight-bold py-0">min</td>
+                        <td class="font-weight-bold py-0">max</td>
+                        <td class="font-weight-bold py-0">min</td>
+                        <td class="font-weight-bold py-0">max</td>
+                        <td class="font-weight-bold py-0">min</td>
+                        <td class="font-weight-bold py-0">max</td>
+                    </tr>
+                    <tr>
+                        <td>Лате малий</td>
+                        <td><input class="form-control border-0 border-top-0 border-right-0 border-left-0" type="text" value="6" disabled/></td>
+                        <td><input class="form-control border-0 border-top-0 border-right-0 border-left-0" type="text" value="7" disabled/></td>
+                        <td><input class="form-control border-0 border-top-0 border-right-0 border-left-0" type="text" value="250" disabled/></td>
+                        <td><input class="form-control border-0 border-top-0 border-right-0 border-left-0" type="text" value="300" disabled/></td>
+                        <td><input class="form-control border-0 border-top-0 border-right-0 border-left-0" type="text" value="0" disabled/></td>
+                        <td><input class="form-control border-0 border-top-0 border-right-0 border-left-0" type="text" value="0" disabled/></td>
+                        <td><input class="form-control border-0 border-top-0 border-right-0 border-left-0" type="text" value="22.05.16" disabled/></td>
+                        <td>
+                            <div class="d-flex align-items-center model-buttons-group">
+                                <span class="fa-stack fa-lg mr-2 fields_edit">
+                                  <i class="fa fa-circle-thin fa-stack-2x"></i>
+                                  <i class="fa fa-pencil fa-stack-1x"></i>
+                                </span>
+                                <span class="fa-stack fa-lg mr-2">
+                                  <i class="fa fa-circle-thin fa-stack-2x"></i>
+                                  <i class="fa fa-download fa-stack-1x"></i>
+                                </span>
+                                <span class="fa-stack fa-lg row_remove">
+                                  <i class="fa fa-circle-thin fa-stack-2x"></i>
+                                  <i class="fa fa-times fa-stack-1x"></i>
+                                </span>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
             </div>
         </div>
         <!-- Scroll to Top Button-->
@@ -253,6 +309,22 @@
 <!-- Custom scripts for all pages-->
 <script src="./js/scripts.min.js"></script>
 <script src="./js/jquery.easing.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $(".fields_edit").on('click', function () {
+            var $row = $(this).closest("tr"),
+                $tds = $row.find("td");
+            $.each($tds, function() {
+                $(this).find(".form-control").removeAttr('disabled').removeClass('border-0');
+            });
+        });
+
+        $(".row_remove").on('click', function () {
+            var $row = $(this).closest("tr");
+            $row.remove();
+        });
+    });
+</script>
 </body>
 
 </html>

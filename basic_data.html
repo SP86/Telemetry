@@ -12,7 +12,7 @@
     <!-- Bootstrap core CSS-->
     <link href="./css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom styles for this template-->
-    <link href="./scss/style.min.css" rel="stylesheet">
+    <link href="./css/style.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -115,39 +115,37 @@
     </nav>
     <main class="content-wrapper">
         <div class="container mb-5">
-            <div class="font-weight-semibold font-size-large mb-5">Типи кавоварок</div>
-            <div class="table-responsive mb-5">
-                <table class="table table-bordered border-bottom-1">
-                    <thead>
-                    <tr>
-                        <th class="lucidagrandebold">ID</th>
-                        <th class="lucidagrandebold w-100">Тип</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Автоматична</td>
-                    </tr>
-                    </tbody>
-                </table>
+            <div class="font-weight-semibold font-size-large mb-5">Дефолтні дані по типам кавоварок</div>
+            <div class="row mb-5">
+                <div class="col-12 col-md-6 col-xl-5 mb-3 mb-md-0">
+                    <div class="row justify-content-between">
+                        <label class="col-12 col-sm-3 col-form-label">Тип</label>
+                        <div class="col-12 col-sm-9">
+                            <select class="form-control w-200-sm-up">
+                                <option selected>Обрати</option>
+                                <option>...</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="font-weight-semibold font-size-large mt-3 mb-5">Типи кавоварок</div>
+        </div>
+    <div class="container-fluid mb-5">
+        <div class="container">
+            <div class="font-weight-semibold font-size-large mb-5">Параметри обладнання</div>
             <div class="table-responsive mb-5">
-                <table class="table table-bordered border-bottom-1">
+                <table class="table table-bordered border-bottom-1 l_r_p_0">
                     <thead>
                     <tr>
-                        <th class="lucidagrandebold">ID</th>
-                        <th class="lucidagrandebold">Назва параметру</th>
-                        <th class="lucidagrandebold">Одиниця вимірювання</th>
+                        <th class="lucidagrandebold w-50">Параметр</th>
+                        <th class="lucidagrandebold w-50">Значення</th>
                         <th class="lucidagrandebold">Дії</th>
                     </tr>
                     </thead>
                     <tbody>
                     <tr>
-                        <td>1</td>
-                        <td><input class="form-control border-0 border-top-0 border-right-0 border-left-0" type="text" value="Базовий лічильник порцій" disabled/></td>
-                        <td><input class="form-control border-0 border-top-0 border-right-0 border-left-0" type="text" value="шт" disabled/></td>
+                        <td>Коефіцієнт кавомолки</td>
+                        <td><input class="form-control border-0 border-top-0 border-right-0 border-left-0" type="text" value="1.1" disabled/></td>
                         <td>
                             <div class="d-flex align-items-center model-buttons-group">
                                 <span class="fa-stack fa-lg mr-2 fields_edit">
@@ -158,45 +156,38 @@
                                   <i class="fa fa-circle-thin fa-stack-2x"></i>
                                   <i class="fa fa-download fa-stack-1x"></i>
                                 </span>
-                                <span class="fa-stack fa-lg row_remove">
-                                  <i class="fa fa-circle-thin fa-stack-2x"></i>
-                                  <i class="fa fa-times fa-stack-1x"></i>
-                                </span>
                             </div>
                         </td>
                     </tr>
                     </tbody>
                 </table>
             </div>
-            <div class="font-weight-semibold font-size-large mt-3 mb-5">Значення параметрів за замовчуванням по типам  кавоварок</div>
-            <div class="table-responsive mb-5">
+            <div class="font-weight-semibold font-size-large mt-3 mb-5">Діапазон значення для вивчення напоїв</div>
+            <div class="table-responsive mb-5 custom-overflow">
                 <table class="table table-bordered border-bottom-1">
-                    <thead>
                     <tr>
-                        <th class="lucidagrandebold">Параметр</th>
-                        <th class="lucidagrandebold">Напій</th>
-                        <th class="lucidagrandebold">Чалдова</th>
-                        <th class="lucidagrandebold">Автоматична</th>
-                        <th class="lucidagrandebold">Суперавтомат</th>
-                        <th class="lucidagrandebold">Професійна</th>
-                        <th class="lucidagrandebold">Дії</th>
+                        <th class="lucidagrandebold border-top-0" rowspan="2">Напій</th>
+                        <th class="lucidagrandebold border-top-0" colspan="2">Кавомолка</th>
+                        <th class="lucidagrandebold border-top-0" colspan="2">Флоуметр</th>
+                        <th class="lucidagrandebold border-top-0" colspan="2">Імпульси під час кавомолки</th>
+                        <th class="lucidagrandebold border-top-0" rowspan="2">Дії</th>
                     </tr>
-                    </thead>
-                    <tbody>
                     <tr>
-                        <td>
-                            <div class="my_appearance">
-                                <select class="form-control border-0 border-top-0 border-right-0 border-left-0 bg-transparent" disabled>
-                                    <option selected>Базовий лічильник порцій</option>
-                                    <option>...</option>
-                                </select>
-                             </div>
-                        </td>
-                        <td><input class="form-control border-0 border-top-0 border-right-0 border-left-0" type="text" value="Лате малий" disabled/></td>
+                        <td class="font-weight-bold py-0">min</td>
+                        <td class="font-weight-bold py-0">max</td>
+                        <td class="font-weight-bold py-0">min</td>
+                        <td class="font-weight-bold py-0">max</td>
+                        <td class="font-weight-bold py-0">min</td>
+                        <td class="font-weight-bold py-0">max</td>
+                    </tr>
+                    <tr>
+                        <td>Лате малий</td>
+                        <td><input class="form-control border-0 border-top-0 border-right-0 border-left-0" type="text" value="6" disabled/></td>
+                        <td><input class="form-control border-0 border-top-0 border-right-0 border-left-0" type="text" value="7" disabled/></td>
+                        <td><input class="form-control border-0 border-top-0 border-right-0 border-left-0" type="text" value="250" disabled/></td>
+                        <td><input class="form-control border-0 border-top-0 border-right-0 border-left-0" type="text" value="300" disabled/></td>
                         <td><input class="form-control border-0 border-top-0 border-right-0 border-left-0" type="text" value="0" disabled/></td>
                         <td><input class="form-control border-0 border-top-0 border-right-0 border-left-0" type="text" value="0" disabled/></td>
-                        <td><input class="form-control border-0 border-top-0 border-right-0 border-left-0" type="text" value="9" disabled/></td>
-                        <td><input class="form-control border-0 border-top-0 border-right-0 border-left-0" type="text" value="1" disabled/></td>
                         <td>
                             <div class="d-flex align-items-center model-buttons-group">
                                 <span class="fa-stack fa-lg mr-2 fields_edit">
@@ -207,17 +198,13 @@
                                   <i class="fa fa-circle-thin fa-stack-2x"></i>
                                   <i class="fa fa-download fa-stack-1x"></i>
                                 </span>
-                                <span class="fa-stack fa-lg row_remove">
-                                  <i class="fa fa-circle-thin fa-stack-2x"></i>
-                                  <i class="fa fa-times fa-stack-1x"></i>
-                                </span>
                             </div>
                         </td>
                     </tr>
-                    </tbody>
                 </table>
             </div>
         </div>
+    </div>
         <!-- /.container-->
     </main>
     <!-- Scroll to Top Button-->
