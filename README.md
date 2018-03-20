@@ -30,3 +30,4 @@ http://telemetry.itpromotion.com.ua/reports_efficiency_one_mashine.html<br/>
 http://telemetry.itpromotion.com.ua/controllers.html<br/>
 http://telemetry.itpromotion.com.ua/controller_new.html<br/>
 http://telemetry.itpromotion.com.ua/controller_edit.html<br/>
+http://telemetry.itpromotion.com.ua/coffee_makers.html<br/>
