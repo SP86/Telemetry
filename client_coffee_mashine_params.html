@@ -12,6 +12,7 @@
     <link href="./fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <!-- Bootstrap core CSS-->
     <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/perfect-scrollbar.css" rel="stylesheet">
     <!-- Custom styles for this template-->
     <link href="./css/style.min.css" rel="stylesheet">
 </head>
@@ -25,7 +26,7 @@
             <i class="fa fa-bars" aria-hidden="true"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav navbar-sidenav">
+            <ul class="navbar-nav navbar-sidenav" id="perfect_scroll">
                 <li class="nav-item">
                     <a class="nav-link" href="index.html">
                         <i class="dashboard menu_icon"></i>
@@ -54,6 +55,42 @@
                     <a class="nav-link" href="#!">
                         <i class="users menu_icon"></i>
                         <span class="nav-link-text">Користувачі</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#!">
+                        <i class="role menu_icon"></i>
+                        <span class="nav-link-text">Управління ролями</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#!">
+                        <i class="shop menu_icon"></i>
+                        <span class="nav-link-text">Торгові точки</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#!">
+                        <i class="notification menu_icon"></i>
+                        <span class="nav-link-text">Сповіщення</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#!">
+                        <i class="role menu_icon"></i>
+                        <span class="nav-link-text">Управління ролями</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#!">
+                        <i class="shop menu_icon"></i>
+                        <span class="nav-link-text">Торгові точки</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#!">
+                        <i class="notification menu_icon"></i>
+                        <span class="nav-link-text">Сповіщення</span>
                     </a>
                 </li>
                 <li class="nav-item">
@@ -306,6 +343,7 @@
 <!-- Bootstrap core JavaScript-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 <script src="./js/bootstrap.min.js"></script>
+<script src="./js/perfect-scrollbar.min.js"></script>
 <!-- Custom scripts for all pages-->
 <script src="./js/scripts.min.js"></script>
 <script src="./js/jquery.easing.min.js"></script>
@@ -323,6 +361,9 @@
             var $row = $(this).closest("tr");
             $row.remove();
         });
+
+        /*$('#perf_scroll').perfectScrollbar();*/
+        const ps = new PerfectScrollbar('#perfect_scroll');
     });
 </script>
 </body>
